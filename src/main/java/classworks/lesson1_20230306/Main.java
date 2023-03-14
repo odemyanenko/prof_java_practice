@@ -1,4 +1,4 @@
-package lesson1_20230306;
+package classworks.lesson1_20230306;
 
 public class Main {
   public static void main(String[] args) {
