@@ -5,5 +5,3 @@ Tasks
 ### Site for description
 [Elektronik, Technik und Trends im Onlineshop | Saturn](https://www.saturn.de/)
 
-Еще в работе, нужно глянуть туда ли копаю))), а то кажется замахнулась на больше чем нужно было...
-----------------
