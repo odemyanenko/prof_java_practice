@@ -1,0 +1,1 @@
+Be careful with the above RegEx mechanism ???, though, as it will fail if you're using non-Arabic digits (i.e. numerals other than 0 through to 9). This is because the "\d" part of the RegEx will only match [0-9] and effectively isn't internationally numerically aware. (Thanks to OregonGhost for pointing this out!)
