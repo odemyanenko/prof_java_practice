@@ -3,6 +3,7 @@ package homeworks.hw8_20230513;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Map;
+import java.util.Objects;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -57,9 +58,9 @@ public class Main {
                             .findFirst()
                             .orElse(""),
                     x -> Arrays.stream(x)
-                            .filter(e -> e != Arrays.stream(x)
+                            .filter(e -> !Objects.equals(e, Arrays.stream(x)
                                     .findFirst()
-                                    .get())
+                                    .get()))
                             .filter(pattern.asPredicate())
                             .mapToInt(Integer::valueOf)
                             .average()
