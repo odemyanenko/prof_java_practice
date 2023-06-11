@@ -8,8 +8,10 @@ public class Service {
   private Book book;
   private Gen gen;
 
-  public Service() {
-    this.gen = new Gen();
+  public Service(Author author, Book book, Gen gen) {
+    this.author = author;
+    this.book = book;
+    this.gen = gen;
   }
 
   public List<Book> getBooksByAuthorYear(Author author, int year) {
@@ -22,7 +24,7 @@ public class Service {
   public List<Book> getBooksByBook(Book book) {
     List<Book> list = gen.get();
     return list.stream()
-            .filter(e->e.equals(book))
+            .filter(e -> e.equals(book))
             .collect(Collectors.toList());
   }
 }
