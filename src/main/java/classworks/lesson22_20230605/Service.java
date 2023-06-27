@@ -1,16 +1,17 @@
 package classworks.lesson22_20230605;
 
+import lombok.Setter;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Setter
 public class Service {
   private Author author;
   private Book book;
   private Gen gen;
 
-  public Service(Author author, Book book, Gen gen) {
-    this.author = author;
-    this.book = book;
+  public Service(Gen gen) {
     this.gen = gen;
   }
 
